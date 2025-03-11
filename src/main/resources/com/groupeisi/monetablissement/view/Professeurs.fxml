@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groupeisi.monetablissement.controllers.ProfesseurController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="578.0" prefWidth="861.0">
+         <children>
+            <Label text="GESTION DES PROFESSEURS" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prenom" promptText="Prenom du prof" />
+            <TextField fx:id="nom" promptText="Nom du prof" />
+            <Button accessibleText="#ajouterClasse" onAction="#ajouterProfesseur" text="Ajouter" />
+            <TableView fx:id="professeurTable" prefHeight="421.0" prefWidth="800.0">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="201.3333078622818" text="ID" />
+                  <TableColumn fx:id="nomColumn" prefWidth="271.99998474121094" text="Nom" />
+                  <TableColumn fx:id="prenomColumn" prefWidth="271.99998474121094" text="Prenom" />
+               </columns>
+            </TableView>
+            <Button accessibleText="#supprimerClasse" onAction="#supprimerProfesseur" text="Supprimer" />
+            <Button fx:id="retourProf" mnemonicParsing="false" onAction="#retournerAuTableau" prefHeight="25.0" prefWidth="71.0" text="Retour" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="578.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groupeisi.monetablissement.controllers.ClasseController">
+        <Label text="Gestion des Classes" textAlignment="CENTER">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+        <TextField fx:id="nom" promptText="Nom de la classe" />
+        <Button accessibleText="#ajouterClasse" onAction="#ajouterClasse" text="Ajouter" />
+        <TableView fx:id="classeTable" prefHeight="421.0" prefWidth="861.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="201.3333078622818" text="ID" />
+                <TableColumn fx:id="nomColumn" prefWidth="271.99998474121094" text="Nom" />
+            </columns>
+        </TableView>
+        <Button accessibleText="#supprimerClasse" onAction="#supprimerClasse" text="Supprimer" />
+   <Button fx:id="retourClasse" mnemonicParsing="false" onAction="#retournerAuTableau" prefHeight="25.0" prefWidth="71.0" text="Retour" />
+    </VBox>

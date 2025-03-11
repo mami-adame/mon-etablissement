@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groupeisi.monetablissement.controllers.TableauDesGestionsController">
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="gestionClasse" layoutX="55.0" layoutY="111.0" mnemonicParsing="false" onAction="#afficherGestionClasses" prefHeight="25.0" prefWidth="142.0" text="Gestion Des Classes " />
+            <Button fx:id="gestionCours" layoutX="445.0" layoutY="111.0" mnemonicParsing="false" onAction="#afficherGestionCours" prefHeight="25.0" prefWidth="132.0" text="Gestion des Cours" />
+            <Button fx:id="gestionProf" layoutX="55.0" layoutY="194.0" mnemonicParsing="false" onAction="#afficherGestionProfesseurs" text="Gestion des Professeurs" />
+            <Button fx:id="gestionEtudiant" layoutX="445.0" layoutY="194.0" mnemonicParsing="false" onAction="#afficherGestionEtudiants" text="Gestion Des Etudiants" />
+            <Label layoutX="190.0" layoutY="28.0" text="TABLEAU DE BORD">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
